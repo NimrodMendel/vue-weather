@@ -1,7 +1,7 @@
 const axios = require("axios");
 
-const searchURL = process.env.API_SEARCH_URL;
-const forecastURL = process.env.API_FORECAST_URL;
+const searchURL = "https://www.metaweather.com/api/location/search";
+const forecastURL = "https://www.metaweather.com/api/location";
 
 const getCityWoeid = async (city) => {
   const { data } = await axios.get(`${searchURL}/?query=${city}`);
