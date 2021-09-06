@@ -36,8 +36,7 @@ export default {
   }),
   methods: {
     onSubmit() {
-      console.log(this.city);
-      this.checkWeather();
+      this.checkWeather(this.city);
     },
   },
 };

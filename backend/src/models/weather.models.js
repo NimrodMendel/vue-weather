@@ -6,7 +6,7 @@ const forecastURL = "https://www.metaweather.com/api/location";
 const getCityWoeid = async (city) => {
   const { data } = await axios.get(`${searchURL}/?query=${city}`);
 
-  if (data) {
+  if (data.length > 0) {
     return data[0].woeid;
   }
 
